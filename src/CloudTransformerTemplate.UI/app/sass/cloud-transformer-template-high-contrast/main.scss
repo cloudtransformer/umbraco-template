@@ -1,0 +1,148 @@
+﻿@charset "UTF-8";
+
+$spacer: 1rem !default;
+
+$white:    #fff !default;
+$black:    #000 !default;
+
+$gray-100: $white !default;
+$gray-200: $white !default;
+$gray-300: $white !default;
+$gray-400: $white !default;
+$gray-500: $black !default;
+$gray-600: $black !default;
+$gray-700: $black !default;
+$gray-800: $black !default;
+$gray-900: $black !default;
+
+$blue:    #0000ff !default;
+$indigo:  #4b0082  !default;
+$purple:  #800080  !default;
+$pink:    #ffc0cb  !default;
+$red:     #ff0000 !default;
+$orange:  #ffa500  !default;
+$yellow:  #ffff00 !default;
+$green:   #00ff00 !default;
+$teal:    #008080  !default;
+$cyan:    #00FFFF !default;
+
+$primary:       $yellow !default;
+$secondary:     $yellow !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-800 !default;
+
+$yiq-contrasted-threshold:  170 !default;
+
+// Body
+
+$body-bg:                   $black !default;
+$body-color:                $white !default;
+
+// Links
+
+$link-color:                $yellow !default;
+
+// Tables
+
+$table-color:                 $white !default;
+$table-accent-bg:             rgba($white, .05) !default;
+$table-hover-bg:              rgba($white, .075) !default;
+$table-border-color:          rgba($black, .6) !default;
+$table-dark-border-color:     $table-border-color !default;
+$table-dark-color:            $white !default;
+
+// Forms
+
+$input-disabled-bg:                     #ccc !default;
+
+// Dropdowns
+
+$dropdown-bg:                       $yellow !default;
+$dropdown-link-color:               $black !default;
+$dropdown-link-hover-color:         $black !default;
+$dropdown-link-hover-bg:            darken($yellow, 10%) !default;
+$dropdown-link-active-color:        $dropdown-link-hover-color !default;
+$dropdown-link-active-bg:           $dropdown-link-hover-bg !default;
+
+// Navs
+
+$nav-tabs-border-color:             rgba($black, .6) !default;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $white !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color !default;
+
+// Navbar
+
+$navbar-dark-hover-color:           $white !default;
+$navbar-light-hover-color:          $gray-800 !default;
+$navbar-light-active-color:         $gray-800 !default;
+
+
+// Pagination
+
+$pagination-color:                  $white !default;
+$pagination-bg:                     transparent !default;
+$pagination-border-color:           rgba($black, .6) !default;
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               transparent !default;
+$pagination-hover-border-color:     rgba($black, .6) !default;
+$pagination-active-bg:              transparent !default;
+$pagination-active-border-color:    rgba($black, .6) !default;
+$pagination-disabled-bg:            transparent !default;
+$pagination-disabled-border-color:  rgba($black, .6) !default;
+
+
+// Jumbotron
+
+$jumbotron-bg:                      darken($gray-900, 5%) !default;
+
+// Cards
+
+$card-border-color:                 $gray-700 !default;
+$card-cap-bg:                       $gray-800 !default;
+$card-bg:                           $gray-900 !default;
+
+// Popovers
+
+$popover-bg:                        lighten($body-bg, 5%) !default;
+
+// Toasts
+
+$toast-background-color:            lighten($body-bg, 5%) !default;
+$toast-border-color:                rgba(0, 0, 0, .2) !default;
+$toast-header-color:                $body-color !default;
+$toast-header-background-color:     $toast-background-color !default;
+$toast-header-border-color:         $toast-border-color !default;
+
+// Modals
+
+$modal-content-bg:                  lighten($body-bg, 5%) !default;
+$modal-header-border-color:         rgba(0, 0, 0, .2) !default;
+
+// Progress bars
+
+$progress-bg:                       darken($gray-900, 5%) !default;
+$progress-bar-color:                $gray-600 !default;
+
+// List group
+
+$list-group-bg:                     lighten($body-bg, 5%) !default;
+$list-group-border-color:           rgba($black, .6) !default;
+$list-group-hover-bg:               lighten($body-bg, 10%) !default;
+$list-group-active-color:           $white !default;
+$list-group-active-bg:              $list-group-hover-bg !default;
+$list-group-active-border-color:    $list-group-border-color !default;
+$list-group-disabled-color:         $gray-700 !default;
+$list-group-action-color:           $white !default;
+
+// Breadcrumbs
+
+$breadcrumb-active-color:           $gray-500 !default;
+
+$text-muted: $white;
+
+@import "../_shared/main";

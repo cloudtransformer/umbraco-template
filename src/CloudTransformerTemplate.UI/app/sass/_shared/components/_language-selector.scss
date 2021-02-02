@@ -1,0 +1,7 @@
+.language-selector {
+    padding-left: $spacer;
+
+    .btn-secondary.dropdown-toggle:focus {
+        box-shadow: none !important;
+    }
+}

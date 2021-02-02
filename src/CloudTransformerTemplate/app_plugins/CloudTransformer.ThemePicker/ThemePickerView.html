@@ -1,0 +1,8 @@
+﻿<div ng-controller="ThemePickerController">
+    <select ng-model="model.value"
+            ng-options="theme.Id as theme.Name for theme in themes"           
+            ng-required="model.isRequired"
+            class="umb-property-editor umb-textstring">
+        <option value="" ng-click="model.value = null"></option>
+    </select>
+</div>

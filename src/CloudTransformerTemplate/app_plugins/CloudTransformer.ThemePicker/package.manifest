@@ -1,0 +1,15 @@
+﻿{
+  "propertyEditors": [
+    {
+      "name": "Theme Picker",
+      "alias": "CloudTransformer.ThemePicker",
+      "editor": {
+        "view": "~/App_Plugins/CloudTransformer.ThemePicker/ThemePickerView.html",
+        "valueType": "STRING"
+      }
+	}
+  ],
+  "javascript": [
+    "~/App_Plugins/CloudTransformer.ThemePicker/ThemePickerController.js"
+  ]
+}

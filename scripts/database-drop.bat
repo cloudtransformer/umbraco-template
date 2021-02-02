@@ -1,0 +1,1 @@
+..\tools\sql-run-script-against-database\sql-run-script-against-database "server=.\SQL2019;database=db-cloudtransformertemplate;user id=sa;password=P67c53T9388PxC433sJE" "..\src\CloudTransformerTemplate.Database\database-drop.sql"

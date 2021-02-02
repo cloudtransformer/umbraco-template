@@ -1,0 +1,35 @@
+﻿@inherits UmbracoViewPage<CountrySelectorViewModel>
+
+@if (Model?.Countries?.Count() > 1 && Model.Current != null)
+{
+    <div class="country-selector">
+        <div class="dropdown">
+            <span class="navbar-text">
+                @Umbraco.GetDictionaryValue(DictionaryItems.Country):
+            </span>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="country-selector-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="flag-icon flag-icon-@Model.Current.Name.ToLower()"></span>
+                @Model.Current.CountryName
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="country-selector-dropdown">
+                @foreach (var country in Model.Countries)
+                {
+                    if (country.Id == Model.Current.Id)
+                    {
+                        <a class="dropdown-item" href="@country.Url">
+                            <span class="flag-icon flag-icon-@country.Name.ToLower()"></span>
+                            <strong>@country.CountryName</strong>
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="dropdown-item" href="@country.Url">
+                            <span class="flag-icon flag-icon-@country.Name.ToLower()"></span>
+                            @country.CountryName
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+}

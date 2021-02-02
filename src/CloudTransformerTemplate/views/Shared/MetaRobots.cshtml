@@ -1,0 +1,14 @@
+﻿@model CloudTransformerTemplate.Core.ViewModels.MetaRobotsViewModel
+
+@if (Model.NoFollow && Model.NoIndex)
+{
+    <meta name="robots" content="noindex, nofollow" />
+}
+else if (Model.NoFollow && !Model.NoIndex)
+{
+    <meta name="robots" content="index, nofollow" />
+}
+else if (!Model.NoFollow && Model.NoIndex)
+{
+    <meta name="robots" content="noindex, follow" />
+}

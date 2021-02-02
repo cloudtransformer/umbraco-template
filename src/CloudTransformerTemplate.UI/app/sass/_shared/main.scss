@@ -1,0 +1,16 @@
+﻿@charset "UTF-8";
+
+$flag-icon-css-path: "/images/flags";
+$dropdown-spacer: 1.8rem !default;
+$link-hover-decoration: none !default;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/flag-icon-css/sass/flag-icon";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navbar";
+
+@import "components/country-selector";
+@import "components/jumbotron";
+@import "components/language-selector";

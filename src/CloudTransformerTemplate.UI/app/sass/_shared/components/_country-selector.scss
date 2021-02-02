@@ -1,0 +1,11 @@
+.country-selector {
+    padding-left: $spacer;
+
+    .flag-icon {
+        margin-right: $spacer / 4;
+    }
+
+    .btn-secondary.dropdown-toggle:focus {
+        box-shadow: none !important;
+    }
+}
